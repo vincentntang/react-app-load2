@@ -5,11 +5,11 @@ const fetchAssets = async () => {
     console.log("fetchAssets executed");
 
     const request = await (
-      await fetch(`https://csb-1mbs6.netlify.app/asset-manifest.json`)
+      await fetch(`react-app-load1.netlify.app/asset-manifest.json`)
     ).json();
 
     console.log(request, "REQUEST");
-    importFilesFromArray(request.entrypoints, "https://csb-1mbs6.netlify.app/");
+    importFilesFromArray(request.entrypoints, "react-app-load1.netlify.app");
   } catch (error) {
     console.error(error, "error");
     console.error("Error fetching app 1 assets");
