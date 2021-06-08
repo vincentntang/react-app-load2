@@ -9,7 +9,7 @@ const fetchAssets = async () => {
     ).json();
 
     console.log(request, "REQUEST");
-    importFilesFromArray(request.entrypoints, "https://react-app-load1.netlify.app");
+    importFilesFromArray(request.entrypoints, "https://react-app-load1.netlify.app/");
   } catch (error) {
     console.error(error, "error");
     console.error("Error fetching app 1 assets");
